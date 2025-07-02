@@ -1,0 +1,17 @@
+// .vscode/launch.json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Headless MuJoCo Debug (EGL)",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "env": {
+        "MUJOCO_GL": "egl",
+        // "MUJOCO_LOGLEVEL": "debug"
+      },
+    }
+  ]
+}
