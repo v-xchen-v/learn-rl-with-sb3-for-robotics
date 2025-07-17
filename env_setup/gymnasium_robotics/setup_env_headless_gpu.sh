@@ -42,8 +42,7 @@ conda activate "$ENV_NAME"
 # ====== 6. Install Core RL Packages ====== #
 echo "📦 Installing core RL packages..."
 pip install --upgrade pip
-pip install \
-    stable-baselines3>=2.1.0 \
+pip install "stable-baselines3>=2.1.0"
 
 # ====== 7. Install Gymnasium-Robotics (in temp dir) and mujoco ======#
 echo "📥 Cloning Gymnasium-Robotics into $TMP_DIR..."
